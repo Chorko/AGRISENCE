@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            /* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #00feba, #998ee0);
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #08510a;
+    text-decoration: none;
+}
+
+.logo:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+li {
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #08510a;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Paragraph styles */
+p {
+    margin: 20px 20px 0;
+    padding: 0;
+}
+
+b {
+    font-weight: bold;
+}
+
+/* Image styles */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+        </style>
+        </head>
+        <body>
+            <header>
+                <div class="main-nav">
+                    <a href="/redirect/projecthomepage" class="logo"  style="color: rgb(8, 21, 10); text-decoration: none;">AgriSense</a>
+                    <ul>
+                        <li><a href="/redirect/projecthomepage" ><i style="color: rgb(8, 21, 10);" class="fa-solid fa-house"></i></a></li>
+                        
+                        <li><a href="/redirect/crops"><i  style="color: rgb(8, 21, 10);" class="fa-brands fa-pagelines"></i></a></li>
+                        <li><a href="/redirect/help2"><i  style="color: rgb(8, 21, 10);" class="fa-solid fa-question"></i></a></li>
+                        
+                    </ul>
+                </div>
+               
+                </header>
+                <img src="{{url_for('static',filename='fertpic.jpg')}}">
+                <p><b>Nitrogen (N) Fertilizer Type</b><br>
+                    N-fertilizers are especially useful in the middle phases of a plant’s life cycle, when the plant needs the most support to keep growing and leafing out. The two most popular types of chemical nitrogen-based fertilizer in European fields are ammonium nitrate (AN), aka nitric acid, and calcium ammonium nitrate (CAN). With its dual-form nitrogen content, AN works well for crops that need fast nitrogen release. Outside of Europe, urea, along with urea ammonium nitrate (UAN) solution in water, is frequently applied. Urea’s versatility and high nitrogen concentration (minimum 44%) make it a common N-based product.Nitrogen fertilizer type must be applied at the start of the season and sometimes throughout, depending on the crop. To apply N-fertilizer at a variable rate, farmers need to be aware of the current field’s condition and vegetation density.</p>
+                <p><b>Phosphorus (P) Fertilizer Type</b><br>
+                    Phosphorus feeding, which serves to reinforce roots and stems, is crucial at all stages of the plant’s growth cycle. The phosphorus type of fertilizer also boosts reproductive success, including flowering, seed production, and fruit set. Phosphorus-based feeding, in contrast to nitrogen-based feeding, has difficulty penetrating plant tissues beyond the root zone. To maintain a constant P supply throughout the season, many farmers opt for a slow-release method. Because of its delayed action and lengthy duration, phosphorus fertilization is best applied before planting.
+                    P-fertilizers come in a wide variety of chemical and physical forms. Single superphosphate (SSP), triple superphosphate (TSP), diammonium phosphate (DAP), ammonium dihydrogen phosphate (ADP), and ammonium polyphosphate (APP) liquid are the most widely used types of P-fertilizer.</p>
+                <p><b>Potassium (K) Fertilizer Type</b><br>
+                    Potassium-based fertilizer will promote robust root development in your plants. This type of synthetic fertilizer can serve as a buffer for your plants if they are deficient in other nutrients. Fertilizing with potassium-based products also helps plants maintain healthy photosynthesis and limits the spread of diseases. Apply this type of chemical as close to the plant’s roots as you can.Some examples of potash type fertilizers are potassium chloride (KCl), potassium sulfate/sulfate of potash (K2SO4), and potassium nitrate (KNO3). These products may also include additional minerals.</p>
+                <p><b>Compound (NPK) Fertilizer Type</b><br>
+                    Fertilizers that contain varying levels of N, P, and K are known as compound ones. There are different types of NPK fertilizers used in agriculture, depending on nutrient formulations, and each is typically designed to fulfill the needs of a particular crop grown in a particular soil type. Most plants and soil types can benefit from a fertilizing product with an NPK ratio of 10-10-10. Soil types that don’t keep nutrients well, like sandy or clay, may call for fertilizing with a higher NPK level, like 15-15-15.</p>
+                    
+                <p><b>Sulfur, Magnesium, And Calcium Fertilizer Types</b><br>
+                    Secondary nutrients like sulfur (S), magnesium (Mg), and calcium (Ca) are rarely used separately but rather mixed with the essential-nutrient fertilizing products. Sulfur is commonly included in N-fertilizers like nitric acid and urea. Additional types of sulfur fertilizers include single superphosphate (SSP), sulfate of potash (SOP), and potassium magnesium sulfate (PMS). Kieserite (magnesium sulfate monohydrate) is a popular Mg-based fertilizer. Calcium nitrate is a widely accessible calcium-based plant nutrition. Lime (calcium carbonate) and gypsum (calcium sulfate) can also be used to amend the soil with calcium.</p>
+                    
+                <p><b>Micronutrient Fertilizer Type</b><br>
+                    A micronutrient type of fertilizer includes nutrients crucial for plant growth but only needed in trace amounts: iron (Fe), manganese (Mn), molybdenum (Mo), boron (B), zinc (Zn), chlorine (Cl), and copper (Cu). Since micronutrients are required in trace amounts, foliar fertilization is typically the most effective way to address a micronutrient shortage. Micronutrients are often blended with fertilizing products of N, P, and/or K.</p>
+                    
+                    <p>The following table summarizes the function of each nutrient that can be found in various types of fertilizers used in agriculture.</p>
+                <img src="{{url_for('static',filename='fertlist.jpg')}}">
+                </body>
+        </html>

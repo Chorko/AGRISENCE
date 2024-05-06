@@ -3,22 +3,13 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
-    <link rel="stylesheet" href="{{url_for('static',filename='ho.css')}}">
-    <img href="{{url_for('static',filename='clear.png')}}"
-    <img href="{{url_for('static',filename='clouds.png')}}"
-    <img href="{{url_for('static',filename='drizzle.png')}}"
-    <img href="{{url_for('static',filename='humidity.png')}}"
-    <img href="{{url_for('static',filename='mist.png')}}"
-    <img href="{{url_for('static',filename='rain.png')}}"
-    <img href="{{url_for('static',filename='snow.png')}}"
-    <img href="{{url_for('static',filename='wind.png')}}"
-
+    <link rel="stylesheet" href="ho.css">
 </head>
 <body>
     <div class="card">
         <div class="search">
             <input type="text" placeholder="Enter city name" spellcheck="false">
-            <div><button><img src="search.png" alt="Search Button"></button></div>
+            <div><button><img src="D:\images\search.png" alt="Search Button"></button></div>
         </div>
         
         <div class="error">
@@ -26,7 +17,7 @@
         </div>
 
         <div class="weather">
-            <img src="rain.png" class="weather-icon">
+            <img src="D:\images\rain.png" class="weather-icon">
             <h1 class="temp">22°C</h1>
             <h2 class="city">Thiruvallur</h2>
             <div class="details">
@@ -38,7 +29,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <img src="wind.png" alt="">
+                    <img src="D:\images\wind.png" alt="">
                     <p class="wind">50%</p>
                     <p>Wind speed</p>
                 </div>
@@ -67,15 +58,15 @@
                 document.querySelector(".wind").innerHTML = data.wind.speed + "km/hr";
 
                 if (data.weather[0].main == "Clouds") {
-                    weatherIcon.src = "clouds.png"; // Double backslashes in the path
+                    weatherIcon.src = "D:\\images\\clouds.png"; // Double backslashes in the path
                 } else if (data.weather[0].main == "Clear") {
-                    weatherIcon.src = "clear.png";
+                    weatherIcon.src = "D:\\images\\clear.png";
                 } else if (data.weather[0].main == "Rain") {
-                    weatherIcon.src = "rain.png";
+                    weatherIcon.src = "D:\\images\\rain.png";
                 } else if (data.weather[0].main == "Drizzle") {
-                    weatherIcon.src = "drizzle.png";
+                    weatherIcon.src = "D:\\images\\drizzle.png";
                 } else if (data.weather[0].main == "Mist") {
-                    weatherIcon.src = "mist.png";
+                    weatherIcon.src = "D:\\images\\mist.png";
                 }
 
                 document.querySelector(".weather").style.display = "block";

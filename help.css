@@ -1,0 +1,126 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling the body */
+body {
+    font-family: Arial, sans-serif;
+    padding-top: 80px; /* Adjusted padding top to accommodate the navbar */
+    background-color: #f0f0f0; /* Light gray background color */
+    background-image: url("tropbg.jpg");
+}
+
+/* Styling the header */
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0; /* Positioning the navbar at the top */
+    z-index: 1000;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2rem;
+    color: rgb(182, 194, 117);
+    text-decoration: none;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.main-nav ul li {
+    margin-right: 20px;
+}
+
+.main-nav ul li a {
+    color: rgb(182, 194, 117);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+/* Styling the container */
+.container {
+    padding: 20px;
+    color: #333; /* Dark text color */
+    margin-top: 100px; /* Adjusted margin top */
+}
+
+.help-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Styling the headings */
+.help-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: rgb(182, 194, 117); /* Header color */
+}
+
+.help-content h2 {
+    font-size: 2rem;
+    margin-top: 30px; /* Increased margin top */
+    margin-bottom: 10px;
+    color: #333; /* Dark text color */
+}
+
+/* Styling the FAQs */
+.help-content ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.help-content ul li {
+    margin-bottom: 10px;
+    color: #555; /* Medium gray text color */
+}
+
+.help-content ul li strong {
+    font-weight: bold;
+}
+
+/* Styling the Contact Us section */
+.help-content footer {
+    margin-top: 60px;
+}
+
+.help-content footer ul {
+    list-style: none;
+    display: flex;
+}
+
+.help-content footer ul li {
+    margin-right: 20px;
+}
+
+.help-content footer ul li a {
+    color: rgb(182, 194, 117);
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.help-content p:last-child {
+    margin-top: 20px;
+    color: #555; /* Medium gray text color */
+}
+
+/* Styling links */
+a {
+    color: rgb(182, 194, 117);
+}
+
+a:hover {
+    text-decoration: underline;
+}

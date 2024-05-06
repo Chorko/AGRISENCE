@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            /* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background:linear-gradient(120deg, #00feba, #998ee0);
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #08510a;
+    text-decoration: none;
+}
+
+.logo:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+li {
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #08510a;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Paragraph styles */
+p {
+    margin: 20px 0;
+    padding: 0 20px;
+}
+
+b {
+    font-weight: bold;
+}
+img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        </style>
+    <title>Crop Monitoring</title>
+    
+</head>
+<body>
+    <header>
+        <div class="main-nav">
+            <a href="/redirect/projecthomepage" class="logo"  style="color: rgb(8, 21, 10); text-decoration: none;">AgriSense</a>
+            <ul>
+                <li><a href="/redirect/projecthomepage" ><i style="color: rgb(8, 21, 10);" class="fa-solid fa-house"></i></a></li>
+                
+                <li><a href="/redirect/crops"><i  style="color: rgb(8, 21, 10);" class="fa-brands fa-pagelines"></i></a></li>
+                <li><a href="/redirect/help2"><i  style="color: rgb(8, 21, 10);" class="fa-solid fa-question"></i></a></li>
+                
+            </ul>
+        </div>
+       
+        </header>
+    <p><b> Agriculture places a high priority on crop monitoring since it enables early detection of pests and diseases, optimises resource use, and promotes sustainable practises. Monitoring supports farmers in making informed decisions, increasing productivity, and minimising environmental impact, which results in improved economic outcomes and long-term agricultural sustainability. Monitoring provides essential information about crop health, growth, and environmental conditions.
+        Modern crop monitoring relies heavily on technology since it offers cutting-edge tools and methods for data gathering, analysis, and decision-making. Real-time monitoring of crop health, soil conditions, and weather patterns is now possible because of innovations like satellite imaging, drones, IoT sensors, and AI-powered analytics. With the help of this technology, farmers can practise precision agriculture, make the most use of their resources, and act quickly in case of emergencies, resulting in more output, lower expenses, and more environmentally friendly agricultural methods.</b> </p>
+    <p>Agriculture sector in India is diminishing day by day which affects the production capacity of ecosystem. There is an exigent need to solve the problem in the domain to restore vibrancy and put it back on higher growth. The paper proposes an e-Agriculture Application based on the framework consisting of KM-Knowledge base and Monitoring modules. To make profitable decisions, farmers need information throughout the entire farming cycle. The required information is scattered in various places which includes real time information such as market prices and current production level stats along with the available primary crop knowledge. A knowledge dataflow model is constructed connecting various scattered sources to the crop structures. The world around is getting automated replacing manual procedures with the advancement of technology, since it is energy efficient and engross minimal man power.The system overcomes limitations of traditional agricultural procedures by utilizing resources efficiently and also reducing labour cost.    </p>
+    <p>Continuous observation and study of air conditions and long-term climatic patterns are required for weather and climate monitoring. Satellites, weather stations, and other cutting-edge technology are used for this monitoring. Accurate weather and climatic information is essential for agriculture in order to plan planting, irrigation, and crop management. Farmers may boost crop yields and overall farm resilience by better preparing for extreme events, adapting to changing conditions, and maximising agricultural practises by knowing weather patterns and climate trends.</p>  
+    <p><b>Farmers now have the opportunity to remotely monitor and manage their fields through smartphones and tablets thanks to mobile apps made specifically for real-time monitoring in agriculture. These apps combine data from many sources, including satellite imaging, weather stations, and IoT sensors, to provide up-to-date information on crop health, soil moisture, and other factors.</b></p>
+     <img src="{{url_for('static',filename='AI.jpg')}}">
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <img href="{{url_for('static',filename='greennew.jpg')}}">
+
+    <title>Homepage</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling the body */
+body {
+    font-family: Arial, sans-serif;
+    padding-top: 80px; /* Adjusted padding top to accommodate the navbar */
+    background-image: url("greennew.jpg");
+    background: linear-gradient(45deg, blueviolet,lightgreen);
+}
+
+/* Styling the header */
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0; /* Positioning the navbar at the top */
+    z-index: 1000;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2rem;
+    color: rgb(234, 237, 220);
+    text-decoration: none;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.main-nav ul li {
+    margin-right: 20px;
+}
+
+.main-nav ul li a {
+    color: rgb(227, 230, 209);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+/* Styling the container */
+.container {
+    padding: 20px;
+    color: #121111; /* Dark text color */
+    margin-top: 100px; /* Adjusted margin top */
+    font-weight: bold;
+}
+
+.help-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Styling the headings */
+.help-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: rgb(194, 203, 141); /* Header color */
+}
+
+.help-content h2 {
+    font-size: 2rem;
+    margin-top: 30px; /* Increased margin top */
+    margin-bottom: 10px;
+    color: #060505; /* Dark text color */
+}
+
+/* Styling the FAQs */
+.help-content ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.help-content ul li {
+    margin-bottom: 10px;
+    color: #181717; /* Medium gray text color */
+}
+
+.help-content ul li strong {
+    font-weight: bold;
+}
+
+/* Styling the Contact Us section */
+.help-content footer {
+    margin-top: 60px;
+}
+
+.help-content footer ul {
+    list-style: none;
+    display: flex;
+}
+
+.help-content footer ul li {
+    margin-right: 20px;
+}
+
+.help-content footer ul li a {
+    color: rgb(182, 194, 117);
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.help-content p:last-child {
+    margin-top: 20px;
+    color: #0a0909; /* Medium gray text color */
+}
+
+/* Styling links */
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="main-nav">
+            <a href="/redirect/projecthomepage" class="logo">AgriSense</a>
+            <ul>
+                <li><a href="/redirect/projecthomepage"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="/redirect/crops"><i class="fa-brands fa-pagelines"></i></a></li>
+                <li><a href="/redirect/help2"><i class="fa-solid fa-question"></i></a></li>
+                <li><a href="/redirect/login">Login</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="help-content">
+            <h1>Help Page</h1>
+            <p>Welcome to the help page of our website. Here you can find information and assistance on various topics.</p>
+            <h2>FAQs</h2>
+            <ul>
+                <li><strong>How do I create an account?</strong><br>Creating an account is easy. Just click on the "Login/Sign Up" button in the top right corner and follow the instructions.</li>
+                <li><strong>How can I contact customer support?</strong><br>You can contact our customer support team by filling out the form on the contact page or by emailing agrisense@yahoo.com.</li>
+                <li><strong>What payment methods do you accept?</strong><br>We accept all major credit cards as well as PayPal.</li>
+                <li><strong>Please ensure that the kit has been placed well inside the soil.</strong></li>
+                <li><strong>Do not cover the kit with any covering such as plastic</strong></li>
+            </ul>
+            <h2>Contact Us</h2>
+            <p>If you have any further questions or need assistance, please don't hesitate to contact us.</p>
+            <footer>
+                <ul>
+                    <li><a href="#"><i class="fa-regular fa-envelope"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-phone"></i></a></li>
+                </ul>
+            </footer>
+            <p>Email: agrisense@yahoo.com</p>
+        </div>
+    </div>
+</body>
+</html>

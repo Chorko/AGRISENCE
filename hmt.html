@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sensor Data</title>
+  <style>
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #ffffff, #e6f7ff);
+  background-size: cover; 
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+p {
+  font-size: 30px;
+}
+  </style>
+</head>
+<body>
+  <h1>Sensor Data</h1>
+  <p>Humidity: <span id="humidity"></span></p>
+  <p>Temperature: <span id="temperature"></span></p>
+  <p>Moisture: <span id="moisture"></span></p>
+  <p>Crop Recommendation: <span id="cropType"></span></p>
+  <p id="info"></p>
+  <p>Do Not Use Fertilizers When Temperature Above 35C And Below 25C.<br>
+    In Such Case ,Give the Plants Sufficient Recovery Time</p>
+
+  <script>
+
+    let previousTemperature = 0;
+    let previousHumidity = 0;
+
+  
+    function generateRandomSensorData() {
+
+      let randomHumidityChange = Math.random() * 6 - 3; 
+      let randomTemperatureChange = Math.random() * 2 - 1; 
+
+      if (previousTemperature + randomTemperatureChange < 31) {
+        randomTemperatureChange = 31 - previousTemperature;
+      } else if (previousTemperature + randomTemperatureChange > 33) {
+        randomTemperatureChange = 33 - previousTemperature;
+      }
+
+      if (previousHumidity + randomHumidityChange < 65) {
+        randomHumidityChange = 65 - previousHumidity;
+      } else if (previousHumidity + randomHumidityChange > 75) {
+        randomHumidityChange = 75 - previousHumidity;
+      }
+      previousHumidity += randomHumidityChange;
+      previousTemperature += randomTemperatureChange;
+
+    
+      const randomMoisture = Math.floor(Math.random() * 11) + 70; 
+
+      return {
+        humidity: previousHumidity.toFixed(2),
+        temperature: previousTemperature.toFixed(2),
+        moisture: randomMoisture
+      };
+    }
+
+
+    function getCropCondition(humidity, temperature, moisture) {
+      if (temperature >= 31 && temperature <= 33 && humidity >= 65 && humidity <= 75  ) {
+        if (temperature >= 32 && humidity >= 70) {
+          return "Rice";}
+   
+        else if (temperature >=31 && humidity >=70) {
+            return "Banana";}
+        else if (temperature >=30 && humidity >=60) {
+            return "Brinjal";}
+        else if (temperature >=26 && temperature<=32  && humidity >=80) {
+            return "Groudnut";}
+        else if (temperature >=28 && temperature<=36  && humidity >=55 && humidity <=60) {
+            return "Mango";}
+        else if (temperature >=28 && temperature<=34  && humidity >=58 && humidity <=60) {
+            return "Ragi";}
+        else if (temperature >=25 && temperature<=30  && humidity >=50 && humidity <=60) {
+            return "Tomato";}
+        else if (temperature >=25 && temperature<=30  && humidity >=50 && humidity <=60) {
+            return "Bajra";}
+        else if (temperature >=30 && temperature<=36  && humidity >=80) {
+            return "Jowar";}
+        else if (temperature >=26 && temperature<=33  && humidity >=80) {
+            return "Corn";}
+      } else {
+        return "No specific crop recommendation.";
+      }
+    }
+
+    function getFertilizerRecommendation(cropType) {
+      switch (cropType) {
+        case "Rice":
+          return "Nitrogen-rich fertilizer";
+        case "Banana":
+          return "Phosphorus-rich fertilizer";
+        case "Brinjal":
+          return "Potassium-rich fertilizer";
+        default:
+          return "No specific fertilizer recommendation.";
+      }
+    }
+
+  
+    function updateSensorData() {
+      const randomSensorData = generateRandomSensorData();
+
+      document.getElementById('humidity').textContent = randomSensorData.humidity + ' %';
+      document.getElementById('temperature').textContent = randomSensorData.temperature + ' °C';
+      document.getElementById('moisture').textContent = randomSensorData.moisture;
+
+      const cropType = getCropCondition(randomSensorData.humidity, randomSensorData.temperature, randomSensorData.moisture);
+      document.getElementById('cropType').textContent = cropType;
+
+
+      
+  
+      if(randomSensorData.temperature >=32) {
+        const fertilizerRecommendation = getFertilizerRecommendation(cropType);
+        document.getElementById('info').textContent = "Use " + fertilizerRecommendation + " for " + cropType + ".";
+      }
+
+  
+      if (randomSensorData.moisture < 70) {
+  
+        const beep = new Audio('beep-01a.mp3'); 
+        beep.play();
+      }
+    }
+
+   
+    updateSensorData();
+
+   
+    setInterval(updateSensorData, 1000);
+  </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sensor Data</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Recommended Crops</h1>
+    <div>
+        <p>Humidity: <span id="humidity" class="value">Loading...</span></p>
+        <p>Temperature (C): <span id="temperature" class="value">Loading...</span></p>
+        <p>Temperature (F): <span id="temperatureF" class="value">Loading...</span></p>
+        <p>Soil Moisture: <span id="moisture" class="value">Loading...</span></p>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
