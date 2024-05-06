@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+div {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.value {
+    transition: color 0.3s ease;
+}
+
+/* Optional: Style for crop descriptions */
+.crop-description {
+    font-style: italic;
+    color: #666;
+}

@@ -1,0 +1,116 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling the body */
+body {
+    font-family: Arial, sans-serif;
+    padding-top: 80px; /* Adjusted padding top to accommodate the navbar */
+}
+
+/* Styling the header */
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0; /* Positioning the navbar at the top */
+    z-index: 1000;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.main-nav ul li {
+    margin-right: 20px;
+}
+
+.main-nav ul li a {
+    color: rgb(182, 194, 117);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+/* Styling the container */
+.container {
+    padding: 20px;
+    color: white;
+    margin-top: 80px; /* Adjusted margin top */
+}
+
+.help-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Styling the FAQs */
+.help-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.help-content h2 {
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.help-content ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.help-content ul li {
+    margin-bottom: 10px;
+}
+
+.help-content ul li strong {
+    font-weight: bold;
+}
+
+/* Styling the Contact Us section */
+.help-content footer {
+    margin-top: 60px;
+}
+
+.help-content footer ul {
+    list-style: none;
+    display: flex;
+}
+
+.help-content footer ul li {
+    margin-right: 20px;
+}
+
+.help-content footer ul li a {
+    color: white;
+    font-size: 2rem;
+}
+
+.help-content p:last-child {
+    margin-top: 20px;
+}
+
+/* Styling links */
+a {
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}

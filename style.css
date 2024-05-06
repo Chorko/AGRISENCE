@@ -1,0 +1,105 @@
+@import url("http://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('Designer.png');
+    background-position: bottom;
+    background-size: cover;
+}
+
+.wrapper {
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 355, 0.2);
+    backdrop-filter: blur(30%);
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    color: aliceblue;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.wrapper .input-box {
+    width: 100%;
+    height: 50px;
+    background: #e4f9f7f3;
+    margin-bottom: 20px;
+    padding: 0 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper .input-box input {
+    width: 100%;
+    height: 50px;
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 18px;
+    color: #333;
+}
+
+.wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+.wrapper .remember-forgot a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.wrapper .remember-forgot label {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    font-weight:600;
+    font: optional;
+}
+
+.wrapper button {
+    width: 100%;
+    height: 50px;
+    background: rgb(14, 179, 174);
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    ;
+}
+
+.wrapper button:hover {
+    background: rgb(18, 154, 111);
+}
+
+.wrapper .register-link {
+    text-align: center;
+}
+
+.wrapper .register-link a {
+    color: rgb(58, 221, 242);
+    text-decoration: none;
+    font-weight: 500;
+}

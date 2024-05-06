@@ -28,4 +28,4 @@ window.addEventListener('DOMContentLoaded', function() {
     const cropInfoElement = document.getElementById('cropinfo');
     const message = displayCropConditions(cropName);
     cropInfoElement.textContent = message;
-});
+});<link rel="stylesheet" href="{{url_for('static',filename='help.css')}}"></link>
